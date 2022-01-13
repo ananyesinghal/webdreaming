@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolabs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="left-board">
+        <div class="logo">
+            <img src="./logo-long@1x.png" alt="" srcset="">
+        </div>
+    </div>
+    <div class="main" onmouseenter="mainHover()" onmouseleave="mainHovered()">
+        <div class="main-img"></div>
+        <div class="wrap-hover">
+            <div id="s1"></div>
+            <div id="s2"></div>
+            <div id="s3" class="middle"></div>
+            <div id="s4"></div>
+            <div id="s5" class="middle-out"></div>
+        </div>
+        <div class="wrap-line">
+            <div class="wrap-line-item anim_slideStart s1"></div>
+            <div class="wrap-line-item s2"></div>
+            <div class="wrap-line-item anim_slide s3" onmouseenter="mainHovered()" onmouseleave="mainHover()"></div>
+            <div class="wrap-line-item s4"></div>
+            <div class="wrap-line-item anim_slideStart s5"></div>
+        </div>
+        <h3 class="slider-head">DESIGN</h3>
+        <h3 class="slider-subhead">AGENCY</h3>
+        <!-- <div class="slider-img"></div> -->
+    </div>
+    <div class="main" id="second-section">
+    </div>
+
+    <script>
+        function mainHover() {
+            var hovered = document.getElementById("s3");
+            hovered.classList.remove("middle")
+        }
+        function mainHovered() {
+            var hovered = document.getElementById("s3");
+            hovered.classList.add("middle")
+        }
+    </script>
+</body>
+</html>
